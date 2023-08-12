@@ -1,0 +1,48 @@
+* ,*::after, *::before {
+padding: 0%;
+box-sizing: border-box;
+margin: 0%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.bar ul{
+    padding: 1.3em 0.6em;
+    display: flex;
+    background-color: rgb(234, 236, 238);
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+}
+.bar button{
+    cursor: pointer;
+    padding: 0.4em 0.9em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(180, 180, 179);
+    border-radius: 0.9px;
+    border: none;
+
+}
+.noteBox{
+    width: 85%;
+    margin-inline:auto;
+    margin-block: 1.7rem;
+    min-height: 19rem;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    overflow-wrap: break-word;
+    gap: 0.7em;
+    flex-wrap: wrap;
+}
+.noteBox > *{
+    padding: 0.5em 0.9em;
+    overflow: auto;
+    flex-basis: 100%;
+    background-color: rgb(165, 114, 114);
+    
+}
+li{
+    list-style: none;
+}

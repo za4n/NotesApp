@@ -1,0 +1,73 @@
+.AddNote{
+    background-color: rgb(229, 246, 246);
+    margin: 3rem auto;
+    width: 50rem;
+    padding: 2rem;
+    position: relative;
+
+}
+.AddNote span{
+    position: absolute;
+    z-index: 99;
+    right: 1.4%;
+    top:1.3%;
+    cursor: pointer;
+}
+.AddNote .form{
+    display: flex;
+    background-color: rgb(142, 174, 174);
+    
+    flex-direction: column;
+    gap: 2rem;
+}
+.form > *{
+    padding: 0.5em 0.8em;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;  
+}
+.form >*>* {
+ justify-content: center;
+ flex: 1;
+padding: 0.3em;
+}
+.body{
+    flex-basis: 100%;
+    gap: 0.5em;
+    flex-direction: column;
+}
+.body textarea{ 
+    min-width: 100%;
+    max-width: 100%;  
+    background-color: rgb(236, 241, 241);
+    min-height: 10rem;
+}
+.tags{
+    flex-direction: column;
+    align-self: center;
+    gap: 0.4em;
+}
+.tags ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+.tags ul li{
+    padding: 0.3em 0.8em;
+    
+    list-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.form button{
+    background-color: rgb(255, 254, 252);
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border: 0.3px solid rgb(172, 167, 167);
+    padding: 1.1em 1.3em;
+    justify-content: center;
+    text-align: center;
+}

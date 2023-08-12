@@ -1,0 +1,200 @@
+#root {
+}
+.nav {
+  position: relative;
+}
+
+nav {
+  font-size: 1.3rem;
+
+  display: flex;
+  align-items: center;
+
+  background-color: rgb(225, 225, 220);
+  width: 100%;
+  padding: 0.7em 1.4em;
+}
+nav .searchs {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-left: auto;
+}
+nav .searchs input {
+  padding: 0.3em 0.7em;
+  border: none;
+  min-width: 6rem;
+  max-width: 12.8rem;
+}
+nav .navBtns {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-left: 5%;
+}
+nav .navBtns button {
+  border: none;
+  background-color: rgb(22, 88, 201);
+  color: rgb(255, 254, 254);
+  border-radius: 4.2px;
+  padding: 0.4em 0.8em;
+}
+nav .navBtns button li {
+  color: aliceblue;
+  list-style: none;
+}
+nav .searchs > * {
+  flex-grow: 1;
+}
+
+.tagList {
+  display: flex;
+  flex-direction: column;
+
+  top: 100%;
+
+  position: absolute;
+}
+.tagList span.close {
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.8em 0.7em;
+  align-self: flex-end;
+}
+.bar .box {
+  display: flex;
+  align-items: center;
+  background-color: rgb(182, 224, 210);
+  min-width: 13rem;
+  padding: 0 0.5em;
+  min-height: 2rem;
+  gap: 0.3em;
+}
+.bar{position: relative;}
+
+
+.box .btn {
+ position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.2em 0.9em;
+}
+.box .btn span {
+  
+  font-size: 70%;
+  cursor: pointer;
+}
+
+.tagList {
+    background-color: rgb(246, 246, 246);
+  width: 100%;
+  top: 100%;
+  right: 0%;
+  left: 0;
+  position: absolute;
+}
+.tagList span{
+    position: relative;
+    right: 5%;
+
+}
+.tagList ul {
+  margin-block:1rem ;  
+  display: flex;
+  gap: 0.3em;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+.tagList ul li {
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid rebeccapurple;
+  padding: 0.3em 0.6em;
+  list-style: none;
+}
+
+.tab {
+  background-color: rgb(58, 67, 83);
+  min-width: 20rem;
+  min-height: 20rem;
+  top: 100%;
+  position: absolute;
+  gap: 1.5em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.9em;
+  right: 7%;
+  z-index: 999;
+  border-radius: 0.7rem;
+  /* transform: translate(-50% ,-50%); */
+}
+.tab span {
+  color: whitesmoke;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.display ul {
+  display: flex;
+
+  gap: 0.5em;
+  flex-direction: column;
+}
+.display ul p {
+  position: relative;
+  width: 100%;
+}
+.display ul p input {
+  width: 100%;
+  padding: 0.3em 0.5em;
+}
+.display ul p span {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  right: 2%;
+  cursor: pointer;
+  color: black;
+  font-size: 0.7rem;
+}
+.notes {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.note {
+  min-width: 20rem;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: aqua;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0.4em 0.9em;
+  gap: 0.6em;
+}
+.note .desc {
+  font-size: 0.9rem;
+}
+.note .tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.tags > * {
+  padding: 0.2em 0.4em;
+  background-color: rgb(67, 187, 187);
+}
